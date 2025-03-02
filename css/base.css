@@ -1,0 +1,75 @@
+:root {
+    /* Main color palette */
+    --main-color: #3498db;
+    --main-color-light: #5dade2;
+    --main-color-dark: #2e86c1;
+
+    /* Secondary color palette */
+    --secondary-color: #9b59b6;
+    --secondary-color-light: #af7ac5;
+    --secondary-color-dark: #8e44ad;
+
+    /* Accent color palette */
+    --accent-color: #2ecc71;
+    --accent-color-light: #58d68d;
+    --accent-color-dark: #28b463;
+
+    /* Warning color palette */
+    --warning-color: #f39c12;
+    --warning-color-light: #f5b041;
+    --warning-color-dark: #d68910;
+
+    /* Critical color palette */
+    --critical-color: #e74c3c;
+    --critical-color-light: #ec7063;
+    --critical-color-dark: #cb4335;
+
+    /* Text color palette */
+    --text-color: #333333;
+    --text-color-light: #666666;
+    --text-color-dark: #000000;
+
+    /* Background color palette */
+    --background-color: #ffffff;
+    --background-color-light: #f2f2f2;
+    --background-color-dark: #e6e6e6;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Main color palette for dark theme */
+        --main-color: #2980b9;
+        --main-color-light: #3498db;
+        --main-color-dark: #1c5980;
+
+        /* Secondary color palette for dark theme */
+        --secondary-color: #8e44ad;
+        --secondary-color-light: #9b59b6;
+        --secondary-color-dark: #7d3c98;
+
+        /* Accent color palette for dark theme */
+        --accent-color: #27ae60;
+        --accent-color-light: #2ecc71;
+        --accent-color-dark: #1e8449;
+
+        /* Warning color palette for dark theme */
+        --warning-color: #e67e22;
+        --warning-color-light: #f39c12;
+        --warning-color-dark: #d35400;
+
+        /* Critical color palette for dark theme */
+        --critical-color: #c0392b;
+        --critical-color-light: #e74c3c;
+        --critical-color-dark: #922b21;
+
+        /* Text color palette for dark theme */
+        --text-color: #cccccc;
+        --text-color-light: #999999;
+        --text-color-dark: #ffffff;
+
+        /* Background color palette for dark theme */
+        --background-color: #121212;
+        --background-color-light: #1e1e1e;
+        --background-color-dark: #000000;
+    }
+}
