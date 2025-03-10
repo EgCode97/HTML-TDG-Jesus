@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/96146611bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>Brand Name</span>
+        </div>
+        <!-- <button class="hamburger-menu" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button> -->
+        <!-- <div id="btn-open-menu">&#9776;</div>
+        <div id="btn-close-menu">&times;</div> -->
+        <div id="btn-open-menu" class="hamburger-menu">&#9776;</div>
+        <div id="btn-close-menu" class="close-menu">&times;</div>
+    </header>
+
+    <nav id="side-menu">
+        <!-- <button class="close-menu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button> -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+
+            <div class="selectors">
+                <div id="element-selector">
+                    <label for="elements">Select Element:</label>
+                    <select id="elements">
+                        <option value="element1">Element 1</option>
+                        <option value="element2">Element 2</option>
+                        <option value="element3">Element 3</option>
+                    </select>
+                </div>
+                <div id="period-selector">
+                    <label for="periods">Select Element:</label>
+                    <select id="periods">
+                        <option value="period1">Period 1</option>
+                        <option value="period2">Period 2</option>
+                        <option value="period3">Period 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="charts">
+                <div class="chart-container">
+                    <h3>Temperature Readings</h3>
+                    <div class="chart-content">
+                        <div class="big-number" id="temperature-big-number"></div>
+                        <div id="temperature-chart"></div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Humidity Readings</h3>
+                    <div class="chart-content">
+                        <div class="big-number" id="humidity-big-number"></div>
+                        <div id="humidity-chart"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alerts">
+                <h3>Alerts</h3>
+                <p>Active Alerts: <span id="active-alerts-counter">3</span></p>
+                <ul id="alerts-list">
+                    <li class="active"><i class="fas fa-exclamation-circle"></i> Alert 1: Active</li>
+                    <li class="active"><i class="fas fa-exclamation-circle"></i> Alert 2: Active</li>
+                    <li class="active"><i class="fas fa-exclamation-circle"></i> Alert 3: Active</li>
+                    <li><i class="fas fa-check-circle"></i> Alert 4: Inactive</li>
+                    <li><i class="fas fa-check-circle"></i> Alert 5: Inactive</li>
+                    <li><i class="fas fa-check-circle"></i> Alert 6: Inactive</li>
+                    <li><i class="fas fa-check-circle"></i> Alert 7: Inactive</li>
+                    <li><i class="fas fa-check-circle"></i> Alert 8: Inactive</li>
+                    <li><i class="fas fa-check-circle"></i> Alert 9: Inactive</li>
+                    <li><i class="fas fa-check-circle"></i> Alert 10: Inactive</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2023 My Website</p>
+    </footer>
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/charts.js"></script>
+    <!-- <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawCharts);
+
+        function drawCharts() {
+            drawTemperatureChart();
+            drawHumidityChart();
+        }
+
+        function drawTemperatureChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Time', 'Temperature'],
+                ['12:00', 20],
+                ['13:00', 22],
+                ['14:00', 23],
+                ['15:00', 21],
+                ['16:00', 24]
+            ]);
+
+            var options = {
+                // title: 'Temperature Readings',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('temperature-chart'));
+            chart.draw(data, options);
+
+            // Update big number
+            var lastTemperature = data.getValue(data.getNumberOfRows() - 1, 1);
+            document.getElementById('temperature-big-number').innerText = lastTemperature + '°C';
+        }
+
+        function drawHumidityChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Time', 'Humidity'],
+                ['12:00', 30],
+                ['13:00', 35],
+                ['14:00', 40],
+                ['15:00', 45],
+                ['16:00', 50]
+            ]);
+
+            var options = {
+                // title: 'Humidity Readings',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('humidity-chart'));
+            chart.draw(data, options);
+
+            // Update big number
+            var lastHumidity = data.getValue(data.getNumberOfRows() - 1, 1);
+            document.getElementById('humidity-big-number').innerText = lastHumidity + '%';
+        }
+    </script> -->
+
+    <script src="js/main.js"></script>
+
+</html>
